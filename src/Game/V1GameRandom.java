@@ -1,8 +1,6 @@
 package Game;
 
 import Facade.PokemonFacade;
-import Model.Pokemon.Pokemon;
-import java.util.Random;
 
 public class V1GameRandom extends V1Game implements GameInterface {
     public V1GameRandom() {
