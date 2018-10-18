@@ -21,7 +21,7 @@ public abstract class V1Game implements GameInterface {
 
     public abstract void fill();
 
-    void fight() {
+    private void fight() {
         Random rand = new Random();
 
         while(this.pokemons.size() != 1) {

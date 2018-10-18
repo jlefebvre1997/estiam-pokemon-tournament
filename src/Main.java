@@ -6,8 +6,10 @@ import Model.Player.Player;
 import java.util.Scanner;
 
 public class Main {
-    private static final int RANDOM_TYPE = 1;
-    private static final int CUSTOM_TYPE = 2;
+    private static final int V2_RANDOM_TYPE = 1;
+    private static final int V2_CUSTOM_TYPE = 2;
+    private static final int V1_RANDOM_TYPE = 3;
+    private static final int V1_CUSTOM_TYPE = 4;
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -18,13 +20,13 @@ public class Main {
 
         GameInterface game = new V1GameRandom();
 
-        if (tournamentType == 1) {
+        if (tournamentType == V2_RANDOM_TYPE) {
             game = new V2GameRandom();
-        } else if (tournamentType == 2) {
+        } else if (tournamentType == V2_CUSTOM_TYPE) {
             game = new V2GameCustom();
-        } else if (tournamentType == 3) {
+        } else if (tournamentType == V1_RANDOM_TYPE) {
             game = new V1GameRandom();
-        } else if (tournamentType == 4) {
+        } else if (tournamentType == V1_CUSTOM_TYPE) {
             game = new V1GameCustom();
         } else {
             System.exit(0);
