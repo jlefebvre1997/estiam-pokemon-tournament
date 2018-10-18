@@ -9,9 +9,9 @@ Ce projet d'école a pour but de simuler un tournoi de Pokémons en ligne de com
 - 1 : Tournoi généré aléatoirement avec 2 joueurs possédant chacun une équipe de 6 pokemons.
 - 2 : Tournoi personnalisé, avec 2 joueurs possédant chacun une équipe de 6 pokemons. Dans le terminal seront demandés
 le nom de l'équipe de chaque joueur, le type du Pokemon par rapport aux types disponibles, le nom du Pokemon et son niveau.
-- 3 : Tournoi généré aléatoirement avec uniquement une liste de Pokemons (V1)
-- 4 : Tournoi personnalisé avec uniquement une liste de Pokemons. Seront demandés dans le terminal le type du Pokemon
-par rapport aux types disponibles, le nom du Pokemon, et son niveau.
+- 3 : Tournoi généré aléatoirement avec uniquement une liste de Pokemons, contenant 10 pokemons (V1)
+- 4 : Tournoi personnalisé avec uniquement une liste de Pokemons. Seront demandés dans le terminal le nombre de pokemons participant au tournoi, et pour chaque pokemon le type du Pokemon
+par rapport aux types disponibles, le nom du Pokemon, et son niveau. (V1)
 
 ## Ce qui a été fait : 
 
