@@ -21,12 +21,19 @@ public abstract class V1Game implements GameInterface {
 
     public abstract void fill();
 
-    public void fight() {
+    void fight() {
         Random rand = new Random();
 
         while(this.pokemons.size() != 1) {
-            Pokemon p1 = this.pokemons.get(rand.nextInt(this.pokemons.size()));
-            Pokemon p2 = this.pokemons.get(rand.nextInt(this.pokemons.size()));
+            int index1 = rand.nextInt(this.pokemons.size());
+            int index2 = rand.nextInt(this.pokemons.size());
+
+            while (index2 == index1) {
+                index2 = rand.nextInt(this.pokemons.size());
+            }
+
+            Pokemon p1 = this.pokemons.get(index1);
+            Pokemon p2 = this.pokemons.get(index2);
 
             while(true) {
                 int index = 0;
